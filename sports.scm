@@ -34,7 +34,7 @@
         (list 'caption sport)
         '(thead (tr (td "Away")
                     (td "Home")
-                    (td "Time / Result")))
+                    (td "Time")))
         (list 'tbody (map (lambda (row) (cons 'tr (map (lambda (col) (list 'td col)) row))) data))))
 
 (define (source->table source)
